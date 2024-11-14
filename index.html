@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLASK'OPY</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Vinculamos el archivo CSS -->
+</head>
+<body>
+
+  <!-- Header -->
+  
+
+  <!-- Formulario de Registro -->
+  <div class="container" id="loginForm">
+    <img src="imagenes/impresoraa.jpg" alt="Impresora" style="width: 100px; display: block; margin: 0 auto;">
+    <h1 style="text-align: center; font-size: 30px;">GLASK'OPY</h1>
+  <h1 style="text-align: center; font-size: 20px;">SISTEMA DE IMPRESIONES</h1>
+    <h3>Iniciar sesión</h3>
+    <input type="text" id="loginUsername" placeholder="Usuario">
+    <input type="password" id="loginPassword" placeholder="Contraseña">
+    <input type="submit" value="Iniciar sesión" id="loginBtn">
+    <p>¿No tienes cuenta? <span onclick="showRegister()">Regístrate aquí</span></p>
+    <div id="loginError" class="error-msg hidden">Usuario o contraseña incorrectos</div>
+  </div>
+
+  <!-- Registro Form -->
+  <div class="container hidden" id="registerForm">
+    <h3>Crear cuenta</h3>
+    <input type="text" id="registerUsername" placeholder="Usuario">
+    <input type="password" id="registerPassword" placeholder="Contraseña">
+    <input type="submit" value="Registrar" id="registerBtn">
+    <p>¿Ya tienes cuenta? <span onclick="showLogin()">Inicia sesión aquí</span></p>
+    <div id="registerError" class="error-msg hidden">Por favor, completa todos los campos</div>
+  </div>
+  
+  <!-- Panel de Impresiones -->
+  <div class="container hidden" id="printPanel">
+    <h3>Bienvenido <span id="welcomeUsername"></span></h3>
+    <input type="text" id="printName" placeholder="Nombre">
+    <input type="text" id="printCareer" placeholder="Semestre y carrera">
+    <input type="number" id="printCount" placeholder="Número de impresiones">
+
+    <label for="printColor">¿Color o blanco y negro?</label>
+    <select id="printColor">
+      <option value="Color">Color</option>
+      <option value="Blanco y negro">Blanco y negro</option>
+    </select>
+
+    <input type="submit" value="Registrar impresión" id="addPrintBtn">
+  </div>
+
+  <script src="script.js"></script> <!-- Vinculamos el archivo JavaScript -->
+</body>
+</html>

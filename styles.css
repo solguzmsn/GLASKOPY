@@ -1,0 +1,230 @@
+/* Importación de fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Merriweather:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+/* Estilo General */
+body {
+  font-family: 'Roboto', sans-serif; /* Fuente principal */
+  margin: 0;
+  padding: 0;
+  background-color: #f8f4fb; /* Suave morado pastel */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Títulos Generales */
+h1 {
+  font-family: 'Merriweather', serif; /* Fuente elegante para el título */
+  font-size: 28px;
+  color: #9b59b6; /* Lila pastel */
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1:hover {
+  color: #8e44ad; /* Lila más intenso al pasar el mouse */
+  text-decoration: underline;
+}
+
+/* Títulos secundarios */
+h6 {
+  font-family: 'Lora', serif; /* Fuente elegante para subtítulos */
+  font-size: 22px;
+  color: #9b59b6; /* Lila pastel */
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+h6:hover {
+  color: #8e44ad;
+  text-decoration: underline;
+}
+
+/* Contenedor principal */
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background: #ffffff; /* Blanco limpio */
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Campos de entrada y botones */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 1px solid #d1c4e9;
+  border-radius: 8px;
+  background-color: #f1ebf7; /* Fondo suave pastel */
+  font-size: 16px;
+  color: #6a1b9a; /* Morado suave */
+  font-family: 'Roboto', sans-serif;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #ffb6c1; /* Rosa pastel */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff69b4; /* Rosa más brillante */
+}
+
+/* Mensajes de error */
+.error-msg {
+  color: #f44336;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+}
+
+/* Enlace de texto */
+span {
+  color: #5c6bc0;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+span:hover {
+  color: #3f51b5;
+}
+
+/* Formularios de login y registro */
+#loginForm {
+  background: #ffffff; /* Blanco limpio */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+#loginForm h2 {
+  color: #9b59b6; /* Lila pastel */
+  margin-bottom: 30px;
+}
+
+#registerForm {
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+#registerForm h2 {
+  color: #ff66b2; /* Rosa pastel */
+  margin-bottom: 30px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus {
+  border-color: #ff66b2; /* Rosa pastel al enfocar */
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Estilo para la tabla */
+table {
+  width: 80%;
+  max-width: 900px;
+  margin: 20px 0;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #ffffff; /* Fondo blanco limpio */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #d1c4e9; /* Borde suave */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo para los encabezados de la tabla */
+th {
+  background-color: #f3e5f5; /* Lila pastel suave */
+  color: #8e44ad; /* Lila más oscuro */
+  font-weight: 600;
+}
+
+/* Estilo para las filas de la tabla */
+td {
+  background-color: #f9f3f8; /* Suave tono pastel */
+  color: #6a1b9a; /* Morado suave */
+}
+
+tr:nth-child(even) td {
+  background-color: #f1ebf7; /* Alternar filas con un tono pastel claro */
+}
+
+tr:hover {
+  background-color: #ffebf7; /* Efecto hover para resaltar la fila */
+}
+
+td, th {
+  border-radius: 6px;
+}
+
+/* Estilo para la tabla en dispositivos pequeños */
+@media (max-width: 768px) {
+  table {
+    width: 95%;
+  }
+  th, td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Mensaje de vacío cuando no hay registros */
+#printsTableHistory tbody {
+  text-align: center;
+}
+
+#printsTableHistory tbody tr {
+  font-size: 16px;
+  color: #9b59b6;
+  font-style: italic;
+}
+
+/* Resaltar el texto en la tabla */
+th, td {
+  transition: all 0.3s ease;
+}
+
+th:hover, td:hover {
+  background-color: #ff66b2; /* Rosa pastel brillante al pasar el ratón */
+  color: white;
+}
